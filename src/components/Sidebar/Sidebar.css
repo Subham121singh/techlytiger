@@ -1,0 +1,39 @@
+.sidebar{
+    z-index: 5;
+
+}
+.sidebar .h-bar .bar {
+    border-top: 1px solid;
+    width: 2rem;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.sidebar .vertical .v-bar{
+    padding-top: 8rem;
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.sidebar .vertical .v-bar .v{
+    border-left: 1px solid;
+    height: 2rem;
+}
+
+.sidebar .vertical .list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    list-style: none;
+    padding: 0;
+    opacity: 2; 
+    backdrop-filter: blur(100px);
+    /* backdrop-filter: brightness(80%); */
+    /* backdrop-filter: hue-rotate(20deg); */
+    /* backdrop-filter: opacity(20%); */
+    cursor: pointer;
+}
+ ul>*:hover{
+    color: var(--orange);
+}
