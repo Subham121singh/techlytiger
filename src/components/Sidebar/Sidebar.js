@@ -3,6 +3,9 @@ import "./Sidebar.css";
 import { Link } from "react-scroll";
 const Sidebar = () => {
   const [click, setClick] = useState(true);
+  const viewHeight = window.outerHeight;
+  const viewWidth = window.outerWidth;
+  console.log(viewWidth);
   return (
     <div className="sidebar">
       {click ? (
@@ -17,7 +20,7 @@ const Sidebar = () => {
           <div className="bar"></div>
         </div>
       ) : (
-        <div className="vertical">
+        <div className="vertical" style={{width:"100vw", height:"100vh", paddingTop:"0px"}}>
           <div
             className="v-bar"
             onClick={() => {
@@ -59,7 +62,7 @@ const Sidebar = () => {
                   setClick(!click);
                 }}
               >
-                <li>Experince</li>
+                <li>Experience</li>
               </Link>
               <Link
                 spy={true}

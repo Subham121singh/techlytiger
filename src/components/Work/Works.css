@@ -61,7 +61,17 @@
     background: white;
 }
 .w-secCircle>img{
-    transform: scale(0.6);
+    transform: scale(0.9);
+    width: 100px;
+    height: 100px;
+}
+/* Inner Circle */
+.i-secCircle>img{
+    top: 10px;
+    transform: scale(2);
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
 }
 .w-backCircle{
     position: absolute;

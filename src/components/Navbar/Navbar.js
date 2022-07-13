@@ -5,6 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import { Link } from "react-scroll";
 
 export function Navbar() {
+  const viewWidth = window.outerWidth;
   return (
     <div className="fix">
       <div className="n-wrapper">
@@ -43,11 +44,12 @@ export function Navbar() {
           <Link spy={true} to="Contact" smooth={true}>
             <button className="button n-button">Contact</button>
           </Link>
-          <div className="mobile-sbar">
-            <Sidebar/>
-          </div>
         </div>
+        {/* <div className="mobile-sbar">
+            <Sidebar/>
+          </div> */}
       </div>
+      
     </div>
   );
 };
